@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Tuition-Management/static/css/main.4ea0b8da.css",
+    "main.js": "/Tuition-Management/static/js/main.fac95c44.js",
+    "static/js/453.76f8a698.chunk.js": "/Tuition-Management/static/js/453.76f8a698.chunk.js",
+    "index.html": "/Tuition-Management/index.html",
+    "main.4ea0b8da.css.map": "/Tuition-Management/static/css/main.4ea0b8da.css.map",
+    "main.fac95c44.js.map": "/Tuition-Management/static/js/main.fac95c44.js.map",
+    "453.76f8a698.chunk.js.map": "/Tuition-Management/static/js/453.76f8a698.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ea0b8da.css",
+    "static/js/main.fac95c44.js"
+  ]
+}
