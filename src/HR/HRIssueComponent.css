@@ -1,0 +1,133 @@
+.hr-issue-container {
+  max-width: 780px;
+  margin: 2.5rem auto;
+  padding: 1.8rem 2.2rem;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+}
+
+.hr-issue-container h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+  color: #2871ff;
+}
+
+.empty {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #555;
+  padding: 4rem 0;
+}
+
+.issue-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.issue-item {
+  border-radius: 12px;
+  margin-bottom: 16px;
+  padding: 18px 22px;
+  box-shadow: 0 2px 14px #2871ff18;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1rem;
+  color: #222;
+  user-select: text;
+  white-space: pre-wrap;
+}
+
+.issue-item.unresolved {
+  background: #ffe6e6;
+  border: 1px solid #ff4d4d;
+}
+
+.issue-item.resolved {
+  background: #d4ffe2;
+  border: 1px solid #4dff79;
+  color: #216b2e;
+}
+
+.issue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2871ff;
+}
+
+.student-name {
+  user-select: text;
+}
+
+.issue-datetime {
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.issue-message {
+  font-size: 1rem;
+  color: inherit;
+}
+
+.resolve-btn {
+  align-self: flex-end;
+  background: linear-gradient(90deg, #2871ff 60%, #50c3fa 100%);
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 18px #2871ff33;
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+.resolve-btn:hover {
+  background: linear-gradient(90deg, #184de6 60%, #2bb8ff 100%);
+}
+
+.resolved-text {
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #216b2e;
+  background-color: #a3d9a5;
+  border-radius: 10px;
+  padding: 6px 14px;
+  user-select: none;
+  box-shadow: 0 4px 14px #38a13950;
+}
+
+/* Responsive */
+
+@media (max-width: 640px) {
+  .hr-issue-container {
+    padding: 1rem 1.2rem;
+  }
+  .issue-item {
+    padding: 16px 18px;
+  }
+  .issue-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .issue-datetime {
+    font-size: 0.9rem;
+  }
+  .resolve-btn, .resolved-text {
+    padding: 9px 16px;
+    font-size: 0.9rem;
+  }
+}

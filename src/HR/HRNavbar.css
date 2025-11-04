@@ -1,0 +1,186 @@
+/* ---------- Base ---------- */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- Header (Top Bar) ---------- */
+.hr-header {
+  /* background: linear-gradient(90deg, #80A1BA, #91C4C3); */
+    background-color: #34618d;
+
+  color: rgb(201, 217, 222);
+  padding: 2px 2px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hr-header-inner {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hr-logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.hr-menu-btn {
+  margin-right: 20px;
+  background: transparent;
+  color: white;
+  font-size: 1.8rem;
+  border: none;
+  cursor: pointer;
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+.hr-menu-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ---------- Sidebar (Desktop) ---------- */
+.hr-sidebar {
+/* background: linear-gradient(90deg, #1a2980, #26d0ce); */
+
+  background-color: #34618d;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 260px;
+  height: calc(100vh - 60px);
+  /* background: #ffffff; */
+  box-shadow: 2px 0 10px rgba(52, 83, 92, 0.865);
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.hr-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.hr-sidebar-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.hr-sidebar-link:hover {
+  background: #e0f7fa;
+  color: #0077b6;
+}
+
+.hr-sidebar-link.active {
+  background: #caf0f8;
+  color: #084a67;
+  font-weight: 600;
+}
+
+/* ---------- Logout Button ---------- */
+.hr-logout-btn {
+  margin-top: 20px;
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.hr-logout-btn:hover {
+  background: #023e8a;
+}
+
+/* ---------- Mobile Overlay Menu ---------- */
+.hr-overlay-menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 119, 182, 0.95);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: top 0.4s ease;
+  z-index: 998;
+  backdrop-filter: blur(8px);
+}
+
+.hr-overlay-menu.show {
+  top: 0;
+}
+
+.hr-mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+}
+
+.hr-mobile-nav a,
+.hr-mobile-nav button {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.hr-mobile-nav a:hover,
+.hr-mobile-nav button:hover {
+  color: #caf0f8;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 992px) {
+  .hr-sidebar {
+    display: none;
+  }
+
+  .hr-menu-btn {
+    display: block;
+  }
+
+  .hr-logo {
+    text-align: center;
+    width: 100%;
+  }
+  .hr-overlay-menu{
+     box-shadow: 2px 0 10px rgba(52, 83, 92, 0.865);
+  background-color: #34618d;
+  color: white;
+  }
+}
+  

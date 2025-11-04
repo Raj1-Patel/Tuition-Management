@@ -1,0 +1,55 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(120deg, #2193b0 0%, #6dd5ed 100%);
+  min-height: 100vh;
+}
+.auth-container, .dashboard {
+  background: #fff;
+  padding: 2em;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 2em auto;
+  box-shadow: 0 4px 20px rgba(30,70,120,0.1);
+}
+h2, h3 {
+  margin-top: 0;
+}
+input, select, button {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  font-size: 1em;
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  box-sizing: border-box;
+}
+button {
+  background: #2193b0;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #176782;
+}
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+.student-table th, .student-table td {
+  border: 1px solid #ddd;
+  padding: 0.4em;
+  text-align: left;
+}
+@media (max-width: 600px) {
+  .dashboard, .auth-container {
+    max-width: 97vw;
+    padding: 1em;
+  }
+  body {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,171 @@
+/* ========== Base Layout ========== */
+.progress-container {
+  margin-top: 23px;
+  padding: 20px;
+  background: #f9fafb;
+  min-height: 100vh;
+  margin-left: 250px; /* Adjust for your HR sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .progress-container {
+    margin-left: 0;
+    padding: 15px;
+  }
+}
+
+/* ========== Heading ========== */
+.progress-container h2 {
+  
+  font-size: 1.8rem;
+  color: #111827;
+  margin-bottom: 25px;
+  font-weight: 600;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 10px;
+}
+
+/* ========== Form Section ========== */
+.progress-form {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 700px;
+}
+
+.student-select,
+.progress-textarea {
+  width: 97%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #374151;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.student-select:focus,
+.progress-textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* ========== Buttons ========== */
+.btn-save {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.3s ease;
+}
+
+.btn-save:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
+
+/* ========== Table Section ========== */
+.progress-list {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.progress-list h3 {
+  font-size: 1.3rem;
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.progress-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.progress-table th,
+.progress-table td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+.progress-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+  color: #111827;
+}
+
+.progress-cell {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ========== Action Buttons ========== */
+.btn-edit,
+.btn-delete {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-edit {
+  background-color: #2563eb;
+  color: #fff;
+  margin-right: 8px;
+}
+
+.btn-edit:hover {
+  background-color: #1e40af;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background-color: #b91c1c;
+}
+
+/* ========== Empty Message ========== */
+.empty-msg {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+/* ========== Mobile Responsive ========== */
+@media (max-width: 768px) {
+  .progress-table th,
+  .progress-table td {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    padding: 5px 8px;
+  }
+}

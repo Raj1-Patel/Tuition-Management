@@ -1,0 +1,51 @@
+.student-attendance-container {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 1.8rem 2.4rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+}
+
+h2 {
+  text-align: center;
+  color: #2871ff;
+  margin-bottom: 1.5rem;
+}
+
+.student-attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-attendance-table th,
+.student-attendance-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e3e8f2;
+  text-align: center;
+  font-weight: 600;
+}
+
+.student-attendance-table tbody tr:hover {
+  background: #f1f8ff;
+}
+
+.present {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.absent {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .student-attendance-table th,
+  .student-attendance-table td {
+    padding: 8px 6px;
+    font-size: 0.9rem;
+  }
+}

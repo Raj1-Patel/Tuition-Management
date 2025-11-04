@@ -1,0 +1,213 @@
+/* StudentMarks.css */
+
+/* --- Container & Heading --- */
+.student-marks-container {
+  margin-right: 150px;
+  max-width: 980px;
+  margin: 2rem auto;
+  background: #f9fbfd;
+  border-radius: 18px;
+  box-shadow: 0 4px 22px 0 rgba(19, 80, 220, 0.08);
+  padding: 1.8rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.student-marks-container h3 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: #2254b4;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.form-group{
+  display: flex;
+}
+/* --- Message --- */
+.message {
+  background: linear-gradient(90deg, #316ae0 45%, #59cbf8 100%);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* --- Form Section --- */
+.form-section {
+  margin-bottom: 1.4rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1.1rem;
+}
+
+.form-group label {
+  font-size: 0.97rem;
+  color: #2a3a54;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  
+  border: 1px solid #b8daed;
+  border-radius: 6px;
+  padding: 0.52rem 0.47rem;
+  font-size: 1rem;
+  background: #f3f7fa;
+  transition: border 0.15s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #296be4;
+}
+
+/* --- Buttons --- */
+.button-group {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.add-button,
+.update-button,
+.cancel-button {
+  padding: 0.46rem 1.3rem;
+  border: none;
+  border-radius: 7px;
+  background: linear-gradient(90deg, #3366cc 50%, #61a0f6 110%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow 0.18s, background 0.18s;
+  box-shadow: 0 2px 10px rgba(37, 124, 205, 0.13);
+}
+
+.update-button {
+  background: linear-gradient(90deg, #28b485 40%, #85ea9c 110%);
+}
+
+.cancel-button {
+  background: linear-gradient(90deg, #e3392b 50%, #fba46b 115%);
+}
+
+.add-button:hover,
+.update-button:hover,
+.cancel-button:hover {
+  box-shadow: 0 4px 16px rgba(55, 115, 237, 0.14);
+}
+
+/* --- Table & Marks --- */
+.table-section {
+  margin-top: 1.3rem;
+}
+
+.marks-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #e6f0fa 70%, #e0edfb 100%);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 11px rgba(25, 67, 151, 0.12);
+}
+
+.marks-table th, .marks-table td {
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.marks-table th {
+  background: #2254b4;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.marks-table tr:nth-child(even) td {
+  background: #f3f7fd;
+}
+
+.marks-table td {
+  background: #f7fafc;
+  border-bottom: 1px solid #d2e6fa;
+}
+
+.edit-btn {
+  padding: 0.2rem 0.7rem;
+  background: #3374da;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.96rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.edit-btn:hover {
+  background: #2555b0;
+}
+
+/* --- Score Coloring --- */
+.score-excellent { color: #29b620; font-weight: 700;}
+.score-good      { color: #45beef; font-weight: 650;}
+.score-average   { color: #ebb718; font-weight: 650;}
+.score-poor      { color: #ea1d36; font-weight: 700;}
+
+.no-marks {
+  text-align: center;
+  color: #707da3;
+  padding: 1.2rem 0 0.4rem 0;
+}
+
+/* --- Responsive Mobile --- */
+@media (max-width: 700px) {
+  .student-marks-container {
+    max-width: 97vw;
+    padding: 1rem;
+  }
+  .marks-table th,
+  .marks-table td {
+    padding: 0.56rem 0.32rem;
+    font-size: 0.92rem;
+  }
+  .form-group input,
+  .form-group select {
+    font-size: 0.95rem;
+  }
+  .add-button,
+  .update-button,
+  .cancel-button {
+    font-size: 0.94rem;
+    padding: 0.32rem 1.1rem;
+  }
+}
+
+/* --- Extra Small Devices --- */
+@media (max-width: 440px) {
+  .student-marks-container {
+    padding: 0.4rem 0.34rem;
+    border-radius: 10px;
+  }
+  .table-section {
+    margin-top: 0.7rem;
+  }
+  .marks-table th,
+  .marks-table td {
+    padding: 0.34rem 0.19rem;
+    font-size: 0.89rem;
+  }
+}

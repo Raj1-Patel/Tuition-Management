@@ -1,0 +1,102 @@
+.exam-container {
+  max-width: 700px;
+  margin: 2.2rem auto;
+  padding: 2rem 1rem;
+  border-radius: 14px;
+  background: #f6f9fc;
+  box-shadow: 0 6px 24px #212a4833;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #193557;
+}
+.exam-container h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #0265fa;
+  margin-bottom: 1rem;
+}
+.exam-form-card {
+  background: #fff;
+  border-radius: 11px;
+  padding: 1.2rem 1rem;
+  margin-bottom: 1.7rem;
+  box-shadow: 0 1.5px 9px #028ff91b;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  border: 1.5px solid #eaf2fb;
+}
+.select, .input, .file-input {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: 1.5px solid #d9e5fa;
+  background: #fbfcfe;
+  transition: border 0.2s;
+  box-shadow: 0 1px 5px #e8f1fd1d;
+}
+.select:focus, .input:focus, .file-input:focus {
+  border-color: #2c98fe;
+  outline: none;
+}
+.send-btn {
+  padding: 12px 0;
+  background: linear-gradient(95deg, #2871ff 70%, #50c3fa 100%);
+  color: #fff;
+  font-size: 1.07rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px #028ff929;
+  cursor: pointer;
+  transition: background 0.34s;
+}
+
+.sent-list h3 {
+  color: #0265fa;
+  font-size: 1.03rem;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.sent-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+.sent-item-card {
+  display: flex;
+  align-items: center;
+  background: #eaf6ff;
+  border-radius: 8px;
+  padding: 10px 0 10px 16px;
+  margin-bottom: 11px;
+  gap: 15px;
+  box-shadow: 0 1px 5px #028ff91b;
+}
+.sent-item-card span {
+  font-size: 1.02em;
+  color: #093;
+  font-weight: 600;
+}
+.file-name {
+  margin-left: auto;
+  color: #1178fc;
+  background: #e2f5ff;
+  border-radius: 7px;
+  padding: 4px 10px;
+  font-size: 0.96em;
+  font-weight: 500;
+}
+.admin-name {
+  margin-left: 14px;
+  color: #1965a3;
+  background: #f7fcff;
+  padding: 3px 10px;
+  border-radius: 7px;
+  font-size: 0.96em;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .exam-container { padding: 0.7rem; }
+  .exam-form-card { padding: 0.5rem; gap: 0.7rem; }
+  .sent-item-card { padding: 8px 0 8px 8px; gap: 9px; }
+}
