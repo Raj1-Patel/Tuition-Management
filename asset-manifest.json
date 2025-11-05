@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Tuition-Management/static/css/main.4ea0b8da.css",
-    "main.js": "/Tuition-Management/static/js/main.990ace8f.js",
+    "main.js": "/Tuition-Management/static/js/main.ee0c8c73.js",
     "index.html": "/Tuition-Management/index.html",
     "main.4ea0b8da.css.map": "/Tuition-Management/static/css/main.4ea0b8da.css.map",
-    "main.990ace8f.js.map": "/Tuition-Management/static/js/main.990ace8f.js.map"
+    "main.ee0c8c73.js.map": "/Tuition-Management/static/js/main.ee0c8c73.js.map"
   },
   "entrypoints": [
     "static/css/main.4ea0b8da.css",
-    "static/js/main.990ace8f.js"
+    "static/js/main.ee0c8c73.js"
   ]
 }
